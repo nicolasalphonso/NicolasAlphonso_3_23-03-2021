@@ -25,32 +25,36 @@
       <nav>
         <a href="index.html">ohmyfood</a>
       </nav>
-      <p class="location">
-        <i class="fas fa-map-marker-alt"></i> Paris, Belleville
-      </p>
-      <h1>Réservez le menu qui vous convient</h1>
-      <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-      <div id="bouton_explorer">
-        <button>Explorer nos restaurants</button>
-      </div>
     </header>
+    <div class="location">
+      <i class="fas fa-map-marker-alt"></i><span> Paris, Belleville</span>
+    </div>
+    <section class="presentation">
+      <h1>Réservez le menu qui vous convient</h1>
+      <p class="presentation__soustitre">
+        Découvrez des restaurants d'exception, sélectionnés par nos soins
+      </p>
+      <button class="presentation__bouton">Explorer nos restaurants</button>
+    </section>
+
     <main>
-      <section id="fonctionnement">
+      <section class="fonctionnement">
         <h2>Fonctionnement</h2>
-        <ol>
-          <li>
-            <i class="fas fa-mobile-alt"></i>
-            <p>Choisissez un restaurant</p>
-          </li>
-          <li>
-            <i class="fas fa-list-ul"></i>
-            <p>Composez votre menu</p>
-          </li>
-          <li>
-            <i class="fas fa-store"></i>
-            <p>Dégustez au restaurant</p>
-          </li>
-        </ol>
+        <p class="fonctionnement__bouton">
+          <span class="fonctionnement__bouton__numero">1</span>
+          <i class="fas fa-mobile-alt fonctionnement__bouton__icone"></i
+          >Choisissez un restaurant
+        </p>
+        <p class="fonctionnement__bouton">
+          <span class="fonctionnement__bouton__numero">2</span>
+          <i class="fas fa-list-ul fonctionnement__bouton__icone"></i>
+          Composez votre menu
+        </p>
+        <p class="fonctionnement__bouton">
+          <span class="fonctionnement__bouton__numero">3</span>
+          <i class="fas fa-store fonctionnement__bouton__icone"></i>
+          Dégustez au restaurant
+        </p>
       </section>
       <section id="Restaurants">
         <h2>Restaurants</h2>
@@ -103,7 +107,7 @@
       </section>
     </main>
     <footer>
-      <h1>Ohmyfood</h1>
+      <h2>Ohmyfood</h2>
       <ul>
         <li><a href="">Proposer un restaurant</a></li>
         <li><a href="">Devenir partenaire</a></li>

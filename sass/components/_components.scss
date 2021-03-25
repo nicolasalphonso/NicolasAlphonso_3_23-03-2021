@@ -1,15 +1,61 @@
-header {
-    .location {
-        display: flex;
-        width: 100%;
-        background-color: $bg-color;
-        margin: 0;
-        height: 50px;
-        padding-left: 100px;
-        align-items: center;
-        color: darken($bg-color, 70%);
-        i {
-            padding-right: 20px;
-        }
+.location {
+    display: flex;
+    width: 100%;
+    background-color: $bg-color;
+    margin: 0;
+    height: 50px;
+    color: darken($bg-color, 80%);
+    justify-content: center;
+    align-items: center;
+    i {
+        position: relative;
+        right: 30px;
     }
+}
+.presentation {
+    &__bouton {
+        width: 215px;
+        height: 50px;
+        background-image: linear-gradient(
+          45deg,
+          $secondary-color,
+          $primary-color
+        );
+        border-color: transparent;
+        border-radius: 30px;
+        box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
+        -webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
+        -moz-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
+        color: white;
+        margin-bottom: 60px;
+      }
+}
+
+.fonctionnement{
+    &__bouton {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-self: center;
+        width: 300px;
+        height: 75px;
+        padding-left: 20px;
+        background-color: lighten($bg-color, 5%);
+        border-radius: 20px;
+        font-weight: 500;
+        &__icone {
+            color: darken($bg-color, 40%);
+            padding-right: 25px ;
+            width: 15px;
+            font-size: x-large;
+        }
+        &__numero {
+            position: relative;
+            right: 35px;
+            padding: 5px 10px;
+            background-color: $primary-color;
+            border-radius: 50%;
+            color: white;
+        }
+       }
 }
