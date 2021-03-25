@@ -2,9 +2,19 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+nav a, footer h2 {
+  font-family: "Shrikhand", sans-serif;
+}
+
 nav a {
   font-family: "Shrikhand", sans-serif;
   font-weight: bold;
   color: black;
   font-size: 2em;
 }
+footer h2 {
+  color: white;
+  font-size: large;
+  font-weight: normal;
+}
+

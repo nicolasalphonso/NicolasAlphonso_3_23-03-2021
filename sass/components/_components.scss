@@ -58,3 +58,22 @@
     }
   }
 }
+
+footer {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  i {
+    font-size: 0.8em;
+    padding-right: 8px;
+  }
+}
