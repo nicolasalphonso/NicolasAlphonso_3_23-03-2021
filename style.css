@@ -222,6 +222,12 @@ footer {
   margin: 10px;
   width: 285px;
 }
+.plats__categorie__nom-plat__description__texte h3,
+.plats__categorie__nom-plat__description__texte p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .plats__categorie__nom-plat__description__texte h3 {
   margin: 0;
   font-size: medium;
@@ -234,7 +240,7 @@ footer {
 .plats__categorie__nom-plat__description__prix p {
   color: #383838;
   font-weight: bold;
-  margin: 0;
+  margin: 0 0 0 10px;
   text-align: right;
 }
 .plats__categorie__nom-plat__icone-selection {
@@ -271,18 +277,6 @@ footer {
 .plats__categorie__nom-plat :focus-within .reduction-texte-plat {
   width: 215px;
   transition: all 330ms ease-in-out;
-}
-.plats__categorie__nom-plat:hover .reduction-texte-plat h3,
-.plats__categorie__nom-plat:hover .reduction-texte-plat p,
-.plats__categorie__nom-plat :focus .reduction-texte-plat h3,
-.plats__categorie__nom-plat :focus .reduction-texte-plat p,
-.plats__categorie__nom-plat :focus-visible .reduction-texte-plat h3,
-.plats__categorie__nom-plat :focus-visible .reduction-texte-plat p,
-.plats__categorie__nom-plat :focus-within .reduction-texte-plat h3,
-.plats__categorie__nom-plat :focus-within .reduction-texte-plat p {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .location {
