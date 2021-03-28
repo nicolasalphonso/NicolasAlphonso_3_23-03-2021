@@ -1,3 +1,27 @@
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes disparition {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
 @mixin bouton-action {
   height: 50px;
     background-image: linear-gradient(45deg, $secondary-color, $primary-color);
@@ -83,4 +107,46 @@ footer {
     font-size: 0.8em;
     padding-right: 8px;
   }
+}
+
+#loadingspinner {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 200px;
+  width: 200px;
+  margin: -100px 0 0 -100px;
+  border: 6px solid transparent;
+  border-top-color: $primary-color;
+  border-radius: 50%;
+animation: rotation 1.5s linear 2, disparition 1s 2.25s forwards ;
+
+}
+
+
+#loadingspinner:before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  border-top-color: $secondary-color;
+  animation: rotation 3s linear 1;
+}
+
+#loadingspinner:after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  bottom: 35px;
+  left: 35px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  border-top-color: $tertiary-color;
+  animation: rotation 1s linear 3;
 }

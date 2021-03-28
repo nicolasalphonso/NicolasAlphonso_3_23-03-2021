@@ -1,3 +1,17 @@
+@keyframes apparition-contenu-apres-loadspinner {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.conteneur-sans-loadspinner {
+  width: 100%;
+  opacity: 0;
+  animation: apparition-contenu-apres-loadspinner 2s cubic-bezier(0.34, 0.52, 0.08, 0.92) 3s forwards;
+}
+
 body {
   width: 100%;
   margin: 0;
@@ -268,8 +282,8 @@ footer {
 .plats__categorie__nom-plat :focus .check-plat i,
 .plats__categorie__nom-plat :focus-visible .check-plat i,
 .plats__categorie__nom-plat :focus-within .check-plat i {
-  rotate: 360deg;
-  transition: rotate 500ms ease-in-out 100ms;
+  transform: rotate(360deg);
+  transition: transform 500ms ease-in-out 100ms;
 }
 .plats__categorie__nom-plat:hover .reduction-texte-plat,
 .plats__categorie__nom-plat :focus .reduction-texte-plat,
@@ -278,7 +292,25 @@ footer {
   width: 215px;
   transition: all 330ms ease-in-out;
 }
-
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+@keyframes disparition {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .location {
   display: flex;
   width: 100%;
@@ -364,6 +396,46 @@ footer a {
 footer i {
   font-size: 0.8em;
   padding-right: 8px;
+}
+
+#loadingspinner {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 200px;
+  width: 200px;
+  margin: -100px 0 0 -100px;
+  border: 6px solid transparent;
+  border-top-color: #9356DC;
+  border-radius: 50%;
+  animation: rotation 1.5s linear 2, disparition 1s 2.25s forwards;
+}
+
+#loadingspinner:before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  border-top-color: #FF79DA;
+  animation: rotation 3s linear 1;
+}
+
+#loadingspinner:after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  bottom: 35px;
+  left: 35px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  border-top-color: #99E2D0;
+  animation: rotation 1s linear 3;
 }
 
 /*# sourceMappingURL=style.css.map */

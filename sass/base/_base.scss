@@ -1,4 +1,20 @@
+@keyframes apparition-contenu-apres-loadspinner {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.conteneur-sans-loadspinner {
+  width: 100%;
+  opacity: 0;
+  animation: apparition-contenu-apres-loadspinner 2s cubic-bezier(.34,.52,.08,.92) 3s forwards;
+  }
+
 body {
   width: 100%;
   margin: 0;
+  
 }
