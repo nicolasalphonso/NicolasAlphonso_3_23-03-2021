@@ -154,12 +154,12 @@ footer {
 .entete {
   width: 100%;
   height: 250px;
-  object-fit: contain;
   position: relative;
 }
 .entete__photo {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .element-menu {
@@ -194,10 +194,18 @@ footer {
 .plats__categorie {
   width: 100%;
 }
+.plats__categorie h2 {
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.plats__categorie h2 span {
+  border-bottom: 2px solid #99E2D0;
+}
 .plats__categorie__nom-plat {
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  margin-bottom: 15px;
 }
 .plats__categorie__nom-plat__description {
   width: 100%;
@@ -243,19 +251,35 @@ footer {
   font-size: x-large;
   color: white;
 }
-.plats__categorie__nom-plat:hover .check-plat, .plats__categorie__nom-plat :focus .check-plat, .plats__categorie__nom-plat :focus-visible .check-plat, .plats__categorie__nom-plat :focus-within .check-plat {
+.plats__categorie__nom-plat:hover .check-plat,
+.plats__categorie__nom-plat :focus .check-plat,
+.plats__categorie__nom-plat :focus-visible .check-plat,
+.plats__categorie__nom-plat :focus-within .check-plat {
   transition: all 330ms ease-in-out;
   transform: translateX(-70px);
 }
-.plats__categorie__nom-plat:hover .check-plat i, .plats__categorie__nom-plat :focus .check-plat i, .plats__categorie__nom-plat :focus-visible .check-plat i, .plats__categorie__nom-plat :focus-within .check-plat i {
+.plats__categorie__nom-plat:hover .check-plat i,
+.plats__categorie__nom-plat :focus .check-plat i,
+.plats__categorie__nom-plat :focus-visible .check-plat i,
+.plats__categorie__nom-plat :focus-within .check-plat i {
   rotate: 360deg;
   transition: rotate 500ms ease-in-out 100ms;
 }
-.plats__categorie__nom-plat:hover .reduction-texte-plat, .plats__categorie__nom-plat :focus .reduction-texte-plat, .plats__categorie__nom-plat :focus-visible .reduction-texte-plat, .plats__categorie__nom-plat :focus-within .reduction-texte-plat {
+.plats__categorie__nom-plat:hover .reduction-texte-plat,
+.plats__categorie__nom-plat :focus .reduction-texte-plat,
+.plats__categorie__nom-plat :focus-visible .reduction-texte-plat,
+.plats__categorie__nom-plat :focus-within .reduction-texte-plat {
   width: 215px;
   transition: all 330ms ease-in-out;
 }
-.plats__categorie__nom-plat:hover .reduction-texte-plat h3, .plats__categorie__nom-plat:hover .reduction-texte-plat p, .plats__categorie__nom-plat :focus .reduction-texte-plat h3, .plats__categorie__nom-plat :focus .reduction-texte-plat p, .plats__categorie__nom-plat :focus-visible .reduction-texte-plat h3, .plats__categorie__nom-plat :focus-visible .reduction-texte-plat p, .plats__categorie__nom-plat :focus-within .reduction-texte-plat h3, .plats__categorie__nom-plat :focus-within .reduction-texte-plat p {
+.plats__categorie__nom-plat:hover .reduction-texte-plat h3,
+.plats__categorie__nom-plat:hover .reduction-texte-plat p,
+.plats__categorie__nom-plat :focus .reduction-texte-plat h3,
+.plats__categorie__nom-plat :focus .reduction-texte-plat p,
+.plats__categorie__nom-plat :focus-visible .reduction-texte-plat h3,
+.plats__categorie__nom-plat :focus-visible .reduction-texte-plat p,
+.plats__categorie__nom-plat :focus-within .reduction-texte-plat h3,
+.plats__categorie__nom-plat :focus-within .reduction-texte-plat p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
