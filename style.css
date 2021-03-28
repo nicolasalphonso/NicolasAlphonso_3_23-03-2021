@@ -173,7 +173,7 @@ footer {
   flex-direction: column;
   position: relative;
   bottom: 60px;
-  width: 90%;
+  width: 373px;
   padding: 5%;
   border-radius: 50px;
   background-color: #eaeaea;
@@ -212,7 +212,7 @@ footer {
 }
 .plats__categorie__nom-plat__description__texte {
   margin: 10px;
-  width: 80%;
+  width: 285px;
 }
 .plats__categorie__nom-plat__description__texte h3 {
   margin: 0;
@@ -243,13 +243,22 @@ footer {
   font-size: x-large;
   color: white;
 }
-.plats__categorie__nom-plat:hover .check-plat {
-  transition: transform 330ms ease-in-out;
+.plats__categorie__nom-plat:hover .check-plat, .plats__categorie__nom-plat :focus .check-plat, .plats__categorie__nom-plat :focus-visible .check-plat, .plats__categorie__nom-plat :focus-within .check-plat {
+  transition: all 330ms ease-in-out;
   transform: translateX(-70px);
 }
-.plats__categorie__nom-plat:hover .check-plat i {
+.plats__categorie__nom-plat:hover .check-plat i, .plats__categorie__nom-plat :focus .check-plat i, .plats__categorie__nom-plat :focus-visible .check-plat i, .plats__categorie__nom-plat :focus-within .check-plat i {
   rotate: 360deg;
-  transition: rotate 500ms ease-in-out 150ms;
+  transition: rotate 500ms ease-in-out 100ms;
+}
+.plats__categorie__nom-plat:hover .reduction-texte-plat, .plats__categorie__nom-plat :focus .reduction-texte-plat, .plats__categorie__nom-plat :focus-visible .reduction-texte-plat, .plats__categorie__nom-plat :focus-within .reduction-texte-plat {
+  width: 215px;
+  transition: all 330ms ease-in-out;
+}
+.plats__categorie__nom-plat:hover .reduction-texte-plat h3, .plats__categorie__nom-plat:hover .reduction-texte-plat p, .plats__categorie__nom-plat :focus .reduction-texte-plat h3, .plats__categorie__nom-plat :focus .reduction-texte-plat p, .plats__categorie__nom-plat :focus-visible .reduction-texte-plat h3, .plats__categorie__nom-plat :focus-visible .reduction-texte-plat p, .plats__categorie__nom-plat :focus-within .reduction-texte-plat h3, .plats__categorie__nom-plat :focus-within .reduction-texte-plat p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .location {

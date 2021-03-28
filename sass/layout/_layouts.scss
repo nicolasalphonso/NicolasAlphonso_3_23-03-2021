@@ -7,6 +7,10 @@
   }
 }
 
+@mixin vitesse-animation-laterale-check-plat {
+  transition: all 330ms ease-in-out;
+}
+
 nav {
   position: relative;
   margin-top: 10px;
@@ -145,7 +149,7 @@ footer {
   flex-direction: column;
   position: relative;
   bottom: 60px;
-  width: 90%;
+  width: $largeurcardsmartphone;
   padding: 5%;
   border-radius: 50px;
   background-color: $bg-color;
@@ -177,7 +181,7 @@ footer {
         align-items: last baseline;
         &__texte {
           margin: 10px;
-          width: 80%;
+          width: $largeurtexteplat;
           h3 {
             margin: 0;
             font-size: medium;
@@ -202,12 +206,12 @@ footer {
       }
       &__icone-selection {
         display: flex;
-        width: 70px;
+        width: $largeurcheckplat;
         align-items: center;
         justify-content: center;
         background-color: $tertiary-color;
         border-radius: 0 15px 15px 0;
-        margin-right: -70px;
+        margin-right: -$largeurcheckplat;
         position: relative;
         i {
           font-size: x-large;
@@ -215,14 +219,24 @@ footer {
         }
       }
 
-      &:hover {
+      &:hover, :focus, :focus-visible, :focus-within {
         .check-plat {
-          transition: transform 330ms ease-in-out;
-          transform: translateX(-70px);
+          @include vitesse-animation-laterale-check-plat();
+          transform: translateX(-$largeurcheckplat);
           i {
             rotate: (360deg);
-            transition: rotate 500ms ease-in-out 150ms;
+            transition: rotate 500ms ease-in-out 100ms;
           
+          }
+        }
+        .reduction-texte-plat {
+          width: $largeurtexteplatreduite;
+          @include vitesse-animation-laterale-check-plat();
+          
+          h3, p {
+            white-space: nowrap;
+          overflow: hidden;
+            text-overflow: ellipsis;
           }
         }
       }
