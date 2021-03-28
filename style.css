@@ -7,12 +7,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-nav a, footer h2 {
+nav a, footer h2, .plats h1 {
   font-family: "Shrikhand", sans-serif;
 }
 
 nav a {
-  font-family: "Shrikhand", sans-serif;
   font-weight: bold;
   color: black;
   font-size: 2em;
@@ -21,15 +20,30 @@ nav a {
 footer h2 {
   color: white;
   font-size: large;
+}
+
+.plats h1, footer h2 {
   font-weight: normal;
 }
 
+.plats h1 {
+  font-size: 1.75em;
+}
+
 nav {
+  position: relative;
   margin-top: 10px;
   width: 100%;
   height: 53px;
   display: flex;
   align-items: center;
+}
+nav i {
+  position: absolute;
+  left: 5%;
+  top: 35%;
+  font-size: medium;
+  color: #383838;
 }
 
 nav a {
@@ -78,6 +92,8 @@ nav a {
   height: 250px;
   margin-bottom: 18px;
   border-radius: 30px;
+  text-decoration: none;
+  color: black;
 }
 .restaurant__photo {
   width: 100%;
@@ -121,7 +137,6 @@ nav a {
   margin-bottom: 0;
 }
 .restaurant__description__coeur {
-  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,10 +144,112 @@ nav a {
 }
 
 footer {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #383838;
   padding: 5%;
+}
+
+.entete {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  position: relative;
+}
+.entete__photo {
+  width: 100%;
+  height: 100%;
+}
+
+.element-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.plats {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 60px;
+  width: 90%;
+  padding: 5%;
+  border-radius: 50px;
+  background-color: #eaeaea;
+}
+.plats__nom-restaurant {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.plats__nom-restaurant__coeur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+}
+.plats__categorie {
+  width: 100%;
+}
+.plats__categorie__nom-plat {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.plats__categorie__nom-plat__description {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 15px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  align-items: last baseline;
+}
+.plats__categorie__nom-plat__description__texte {
+  margin: 10px;
+  width: 80%;
+}
+.plats__categorie__nom-plat__description__texte h3 {
+  margin: 0;
+  font-size: medium;
+  font-weight: 600;
+}
+.plats__categorie__nom-plat__description__texte p {
+  margin: 5px 0 0 0;
+  font-weight: 300;
+}
+.plats__categorie__nom-plat__description__prix p {
+  color: #383838;
+  font-weight: bold;
+  margin: 0;
+  text-align: right;
+}
+.plats__categorie__nom-plat__icone-selection {
+  display: flex;
+  width: 70px;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  margin-right: -70px;
+  position: relative;
+}
+.plats__categorie__nom-plat__icone-selection i {
+  font-size: x-large;
+  color: white;
+}
+.plats__categorie__nom-plat:hover .check-plat {
+  transition: transform 330ms ease-in-out;
+  transform: translateX(-70px);
+}
+.plats__categorie__nom-plat:hover .check-plat i {
+  rotate: 360deg;
+  transition: rotate 500ms ease-in-out 150ms;
 }
 
 .location {
@@ -191,6 +308,18 @@ footer {
   background-color: #9356DC;
   border-radius: 50%;
   color: white;
+}
+
+.plats__bouton {
+  height: 50px;
+  background-image: linear-gradient(45deg, #FF79DA, #9356DC);
+  border-color: transparent;
+  border-radius: 30px;
+  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
+  color: white;
+  margin-bottom: 60px;
 }
 
 footer ul {

@@ -2,12 +2,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-nav a, footer h2 {
+nav a, footer h2, .plats h1 {
   font-family: "Shrikhand", sans-serif;
 }
 
 nav a {
-  font-family: "Shrikhand", sans-serif;
   font-weight: bold;
   color: black;
   font-size: 2em;
@@ -15,6 +14,12 @@ nav a {
 footer h2 {
   color: white;
   font-size: large;
+}
+
+.plats h1, footer h2 {
   font-weight: normal;
 }
 
+.plats h1 {
+  font-size: 1.75em;
+}
