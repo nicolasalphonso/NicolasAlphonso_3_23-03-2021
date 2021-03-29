@@ -93,6 +93,12 @@ footer h2 {
   -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
 }
+.fonctionnement__bouton:hover {
+  background-color: #f2eafb;
+}
+.fonctionnement__bouton:hover i {
+  color: #9356DC;
+}
 .fonctionnement__bouton__icone {
   color: #848484;
   padding-right: 25px;
@@ -511,6 +517,12 @@ footer {
   box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
   -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+}
+.fonctionnement__bouton:hover {
+  background-color: #f2eafb;
+}
+.fonctionnement__bouton:hover i {
+  color: #9356DC;
 }
 .fonctionnement__bouton__icone {
   color: #848484;
