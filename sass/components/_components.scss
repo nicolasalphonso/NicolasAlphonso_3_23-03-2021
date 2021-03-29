@@ -19,19 +19,34 @@
   }
 }
 
+@mixin shadows-classique {
+  box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+}
 
-
+@mixin shadows-renforcées {
+  box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
+  -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
+  -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
+}
 
 @mixin bouton-action {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
   height: 50px;
-    background-image: linear-gradient(45deg, $secondary-color, $primary-color);
-    border-color: transparent;
-    border-radius: 30px;
-    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
-    -webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
-    -moz-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
-    color: white;
-    margin-bottom: 60px;
+  background-image: linear-gradient(60deg, $secondary-color, $primary-color);
+  border-color: transparent;
+  border-radius: 30px;
+  @include shadows-classique;
+  color: white;
+  margin-bottom: 60px;
+  &:hover {
+    @include shadows-renforcées;
+    background-image: linear-gradient(60deg, lighten($secondary-color, 3%), lighten($primary-color, 3%));
+  }
 }
 .location {
   display: flex;
@@ -47,12 +62,7 @@
     right: 30px;
   }
 }
-.presentation {
-  &__bouton {
-    width: 215px;
-    @include bouton-action;
-  }
-}
+
 
 .fonctionnement {
   &__bouton {
@@ -66,9 +76,7 @@
     background-color: lighten($bg-color, 5%);
     border-radius: 20px;
     font-weight: 500;
-    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
-    -webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
-    -moz-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
+    @include shadows-classique;
     &__icone {
       color: darken($bg-color, 40%);
       padding-right: 25px;
@@ -120,10 +128,8 @@ footer {
   border: 6px solid transparent;
   border-top-color: $primary-color;
   border-radius: 50%;
-animation: rotation 1.5s linear 2, disparition 1s 2.25s forwards ;
-
+  animation: rotation 1.5s linear 2, disparition 1s 2.25s forwards;
 }
-
 
 #loadingspinner:before {
   content: "";

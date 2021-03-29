@@ -44,6 +44,149 @@ footer h2 {
   font-size: 1.75em;
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+@keyframes disparition {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.location {
+  display: flex;
+  width: 100%;
+  background-color: #eaeaea;
+  margin: 0;
+  height: 50px;
+  color: #1e1e1e;
+  justify-content: center;
+  align-items: center;
+}
+.location i {
+  position: relative;
+  right: 30px;
+}
+
+.fonctionnement__bouton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  width: 300px;
+  height: 75px;
+  padding-left: 20px;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+}
+.fonctionnement__bouton__icone {
+  color: #848484;
+  padding-right: 25px;
+  width: 15px;
+  font-size: x-large;
+}
+.fonctionnement__bouton__numero {
+  position: relative;
+  right: 35px;
+  padding: 5px 10px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  color: white;
+}
+
+.plats__bouton {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-image: linear-gradient(60deg, #FF79DA, #9356DC);
+  border-color: transparent;
+  border-radius: 30px;
+  box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  color: white;
+  margin-bottom: 60px;
+}
+.plats__bouton:hover {
+  box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
+  -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
+  -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
+  background-image: linear-gradient(60deg, #ff88de, #9b63df);
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer li {
+  margin-bottom: 5px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer i {
+  font-size: 0.8em;
+  padding-right: 8px;
+}
+
+#loadingspinner {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 200px;
+  width: 200px;
+  margin: -100px 0 0 -100px;
+  border: 6px solid transparent;
+  border-top-color: #9356DC;
+  border-radius: 50%;
+  animation: rotation 1.5s linear 2, disparition 1s 2.25s forwards;
+}
+
+#loadingspinner:before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  border-top-color: #FF79DA;
+  animation: rotation 3s linear 1;
+}
+
+#loadingspinner:after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  bottom: 35px;
+  left: 35px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  border-top-color: #99E2D0;
+  animation: rotation 1s linear 3;
+}
+
 nav {
   position: relative;
   margin-top: 10px;
@@ -87,6 +230,29 @@ nav a {
   font-weight: 100;
 }
 
+.presentation__bouton, .commande__bouton {
+  width: 215px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-image: linear-gradient(60deg, #FF79DA, #9356DC);
+  border-color: transparent;
+  border-radius: 30px;
+  box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  color: white;
+  margin-bottom: 60px;
+}
+.presentation__bouton:hover, .commande__bouton:hover {
+  box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
+  -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
+  -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
+  background-image: linear-gradient(60deg, #ff88de, #9b63df);
+}
+
 .fonctionnement {
   padding: 5%;
   display: flex;
@@ -108,6 +274,9 @@ nav a {
   border-radius: 30px;
   text-decoration: none;
   color: black;
+  box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
 }
 .restaurant__photo {
   width: 100%;
@@ -187,7 +356,7 @@ footer {
   flex-direction: column;
   position: relative;
   bottom: 60px;
-  width: 373px;
+  width: 90%;
   padding: 5%;
   border-radius: 50px;
   background-color: #eaeaea;
@@ -230,11 +399,10 @@ footer {
   border-radius: 15px;
   flex-wrap: nowrap;
   overflow: hidden;
-  align-items: last baseline;
 }
 .plats__categorie__nom-plat__description__texte {
   margin: 10px;
-  width: 285px;
+  width: 265px;
 }
 .plats__categorie__nom-plat__description__texte h3,
 .plats__categorie__nom-plat__description__texte p {
@@ -251,11 +419,14 @@ footer {
   margin: 5px 0 0 0;
   font-weight: 300;
 }
+.plats__categorie__nom-plat__description__prix {
+  height: 100%;
+  padding-top: 34px;
+}
 .plats__categorie__nom-plat__description__prix p {
   color: #383838;
   font-weight: bold;
-  margin: 0 0 0 10px;
-  text-align: right;
+  margin: 0;
 }
 .plats__categorie__nom-plat__icone-selection {
   display: flex;
@@ -289,7 +460,7 @@ footer {
 .plats__categorie__nom-plat :focus .reduction-texte-plat,
 .plats__categorie__nom-plat :focus-visible .reduction-texte-plat,
 .plats__categorie__nom-plat :focus-within .reduction-texte-plat {
-  width: 215px;
+  width: 195px;
   transition: all 330ms ease-in-out;
 }
 @keyframes rotation {
@@ -326,19 +497,6 @@ footer {
   right: 30px;
 }
 
-.presentation__bouton {
-  width: 215px;
-  height: 50px;
-  background-image: linear-gradient(45deg, #FF79DA, #9356DC);
-  border-color: transparent;
-  border-radius: 30px;
-  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
-  -webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
-  -moz-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
-  color: white;
-  margin-bottom: 60px;
-}
-
 .fonctionnement__bouton {
   display: flex;
   flex-direction: row;
@@ -350,9 +508,9 @@ footer {
   background-color: #f7f7f7;
   border-radius: 20px;
   font-weight: 500;
-  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
-  -webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
-  -moz-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
 }
 .fonctionnement__bouton__icone {
   color: #848484;
@@ -370,15 +528,25 @@ footer {
 }
 
 .plats__bouton {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
   height: 50px;
-  background-image: linear-gradient(45deg, #FF79DA, #9356DC);
+  background-image: linear-gradient(60deg, #FF79DA, #9356DC);
   border-color: transparent;
   border-radius: 30px;
-  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
-  -webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
-  -moz-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
   color: white;
   margin-bottom: 60px;
+}
+.plats__bouton:hover {
+  box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
+  -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
+  -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
+  background-image: linear-gradient(60deg, #ff88de, #9b63df);
 }
 
 footer ul {
