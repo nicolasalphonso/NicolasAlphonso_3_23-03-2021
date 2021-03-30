@@ -376,7 +376,7 @@ nav a {
 }
 
 .restaurants {
-  padding: 5%;
+  padding: 5% 5% 120px 5%;
   display: flex;
   flex-direction: column;
   background-color: #f7f7f7;
@@ -448,6 +448,7 @@ footer {
   flex-direction: column;
   background-color: #383838;
   padding: 5%;
+  bottom: 60px;
 }
 
 .entete {
@@ -474,7 +475,8 @@ footer {
   bottom: 60px;
   width: 90%;
   padding: 5%;
-  border-radius: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   background-color: #eaeaea;
 }
 .plats__nom-restaurant {
