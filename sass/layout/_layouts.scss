@@ -1,4 +1,5 @@
 @import "../components/components";
+@import "../utils/breakpoints";
 @mixin coeur {
   &__coeur {
     display: flex;
@@ -58,25 +59,48 @@ nav a {
 .fonctionnement {
   padding: 5%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bg-color;
+  @include mobile-tablette {
+    flex-direction: column;
+    background-color: white;
+  }
+  h2 {
+    width: 100%;
+  }
 }
 
 .restaurants {
   padding: 5% 5% 120px 5%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
   background-color: lighten($bg-color, 5%);
+  @include mobile-tablette {
+    flex-direction: column;
+  }
+  h2 {
+    width: 100%;
+  }
 }
 
 .restaurant {
   display: flex;
   flex-direction: column;
+  width: 40%;
   height: 250px;
   margin-bottom: 18px;
   border-radius: 30px;
   text-decoration: none;
   color: black;
   @include shadows-classique;
+  @include mobile-tablette {
+    width: 100%;
+  }
   &__photo {
     width: 100%;
     height: 70%;
@@ -89,7 +113,7 @@ nav a {
     }
     &__nouveau {
       position: absolute;
-      left: 245px;
+      right: 15px;
       top: 13px;
       display: flex;
       height: 30px;
@@ -242,7 +266,6 @@ footer {
       :focus,
       :focus-visible,
       :focus-within {
-          
         .check-plat {
           transform: translateX(-$largeurcheckplat);
           i {
@@ -252,8 +275,6 @@ footer {
         }
         .reduction-texte-plat {
           width: $largeurtexteplatreduite;
-          
-
         }
       }
     }
