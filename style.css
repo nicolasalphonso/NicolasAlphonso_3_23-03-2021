@@ -265,6 +265,7 @@ footer h2 {
 }
 
 .commande__bouton {
+  margin-top: 50px;
   opacity: 0;
 }
 
@@ -518,6 +519,8 @@ footer {
 .plats__categorie__nom-plat__description__texte {
   margin: 10px;
   width: 265px;
+  transition-property: width;
+  transition-duration: 1s;
 }
 .plats__categorie__nom-plat__description__texte h3,
 .plats__categorie__nom-plat__description__texte p {
@@ -552,6 +555,9 @@ footer {
   border-radius: 0 15px 15px 0;
   margin-right: -70px;
   position: relative;
+  transform: translateX(0);
+  transition-property: transform;
+  transition-duration: 1s;
 }
 .plats__categorie__nom-plat__icone-selection i {
   font-size: x-large;
@@ -561,7 +567,6 @@ footer {
 .plats__categorie__nom-plat :focus .check-plat,
 .plats__categorie__nom-plat :focus-visible .check-plat,
 .plats__categorie__nom-plat :focus-within .check-plat {
-  transition: all 330ms ease-in-out;
   transform: translateX(-70px);
 }
 .plats__categorie__nom-plat:hover .check-plat i,
@@ -576,7 +581,6 @@ footer {
 .plats__categorie__nom-plat :focus-visible .reduction-texte-plat,
 .plats__categorie__nom-plat :focus-within .reduction-texte-plat {
   width: 195px;
-  transition: all 330ms ease-in-out;
 }
 
 @keyframes rotation {
@@ -800,6 +804,7 @@ footer {
 }
 
 .commande__bouton {
+  margin-top: 50px;
   opacity: 0;
 }
 

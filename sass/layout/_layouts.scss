@@ -9,7 +9,7 @@
 }
 
 @mixin vitesse-animation-laterale-check-plat {
-  transition: all 330ms ease-in-out;
+  transition-duration: 1s;
 }
 
 nav {
@@ -189,6 +189,8 @@ footer {
         &__texte {
           margin: 10px;
           width: $largeurtexteplat;
+          transition-property: width;
+          @include vitesse-animation-laterale-check-plat;
           h3,
           p {
             white-space: nowrap;
@@ -225,6 +227,9 @@ footer {
         border-radius: 0 15px 15px 0;
         margin-right: -$largeurcheckplat;
         position: relative;
+        transform: translateX(0);
+        transition-property: transform;
+        @include vitesse-animation-laterale-check-plat;
         i {
           font-size: x-large;
           color: white;
@@ -235,8 +240,8 @@ footer {
       :focus,
       :focus-visible,
       :focus-within {
+          
         .check-plat {
-          @include vitesse-animation-laterale-check-plat();
           transform: translateX(-$largeurcheckplat);
           i {
             transform: rotate(360deg);
@@ -245,7 +250,8 @@ footer {
         }
         .reduction-texte-plat {
           width: $largeurtexteplatreduite;
-          @include vitesse-animation-laterale-check-plat();
+          
+
         }
       }
     }
