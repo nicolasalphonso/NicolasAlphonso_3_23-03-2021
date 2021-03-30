@@ -54,12 +54,6 @@ nav a {
     font-weight: 100;
   }
 }
-.presentation, .commande {
-  &__bouton {
-    width: 215px;
-    @include bouton-action;
-  }
-}
 
 .fonctionnement {
   padding: 5%;
@@ -167,8 +161,6 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    &__titre {
-    }
     @include coeur;
   }
   &__categorie {
@@ -254,9 +246,6 @@ footer {
         .reduction-texte-plat {
           width: $largeurtexteplatreduite;
           @include vitesse-animation-laterale-check-plat();
-        }
-
-        &:not(:hover) {
         }
       }
     }

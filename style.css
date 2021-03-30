@@ -71,6 +71,89 @@ footer h2 {
     opacity: 1;
   }
 }
+@keyframes fadein-translation {
+  from {
+    margin-top: 60px;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeinmenu-1 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 0.2s forwards;
+}
+
+.fadeinmenu-2 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 0.4s forwards;
+}
+
+.fadeinmenu-3 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 0.6s forwards;
+}
+
+.fadeinmenu-4 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 0.8s forwards;
+}
+
+.fadeinmenu-5 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 1s forwards;
+}
+
+.fadeinmenu-6 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 1.2s forwards;
+}
+
+.fadeinmenu-7 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 1.4s forwards;
+}
+
+.fadeinmenu-8 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 1.6s forwards;
+}
+
+.fadeinmenu-9 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 1.8s forwards;
+}
+
+.fadeinmenu-10 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 2s forwards;
+}
+
+.fadeinmenu-11 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 2.2s forwards;
+}
+
+.fadeinmenu-12 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 2.4s forwards;
+}
+
+.fadeinmenu-13 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 2.6s forwards;
+}
+
+.fadeinmenu-14 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 2.8s forwards;
+}
+
+.fadeinmenu-15 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 3s forwards;
+}
+
 .location {
   display: flex;
   width: 100%;
@@ -156,6 +239,33 @@ footer h2 {
   -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
   -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
   background-image: linear-gradient(60deg, #ff88de, #9b63df);
+}
+
+.presentation__bouton, .commande__bouton {
+  width: 215px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-image: linear-gradient(60deg, #FF79DA, #9356DC);
+  border-color: transparent;
+  border-radius: 30px;
+  box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  color: white;
+  margin-bottom: 60px;
+}
+.presentation__bouton:hover, .commande__bouton:hover {
+  box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
+  -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
+  -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
+  background-image: linear-gradient(60deg, #ff88de, #9b63df);
+}
+
+.commande__bouton {
+  opacity: 0;
 }
 
 footer ul {
@@ -256,29 +366,6 @@ nav a {
   width: 80%;
   text-align: center;
   font-weight: 100;
-}
-
-.presentation__bouton, .commande__bouton {
-  width: 215px;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  background-image: linear-gradient(60deg, #FF79DA, #9356DC);
-  border-color: transparent;
-  border-radius: 30px;
-  box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
-  -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
-  -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
-  color: white;
-  margin-bottom: 60px;
-}
-.presentation__bouton:hover, .commande__bouton:hover {
-  box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
-  -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
-  -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
-  background-image: linear-gradient(60deg, #ff88de, #9b63df);
 }
 
 .fonctionnement {
@@ -491,6 +578,7 @@ footer {
   width: 195px;
   transition: all 330ms ease-in-out;
 }
+
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
@@ -518,6 +606,89 @@ footer {
     opacity: 1;
   }
 }
+@keyframes fadein-translation {
+  from {
+    margin-top: 60px;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeinmenu-1 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 0.2s forwards;
+}
+
+.fadeinmenu-2 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 0.4s forwards;
+}
+
+.fadeinmenu-3 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 0.6s forwards;
+}
+
+.fadeinmenu-4 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 0.8s forwards;
+}
+
+.fadeinmenu-5 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 1s forwards;
+}
+
+.fadeinmenu-6 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 1.2s forwards;
+}
+
+.fadeinmenu-7 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 1.4s forwards;
+}
+
+.fadeinmenu-8 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 1.6s forwards;
+}
+
+.fadeinmenu-9 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 1.8s forwards;
+}
+
+.fadeinmenu-10 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 2s forwards;
+}
+
+.fadeinmenu-11 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 2.2s forwards;
+}
+
+.fadeinmenu-12 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 2.4s forwards;
+}
+
+.fadeinmenu-13 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 2.6s forwards;
+}
+
+.fadeinmenu-14 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 2.8s forwards;
+}
+
+.fadeinmenu-15 {
+  opacity: 0;
+  animation: fadein-translation 1.5s ease-in-out 3s forwards;
+}
+
 .location {
   display: flex;
   width: 100%;
@@ -603,6 +774,33 @@ footer {
   -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
   -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
   background-image: linear-gradient(60deg, #ff88de, #9b63df);
+}
+
+.presentation__bouton, .commande__bouton {
+  width: 215px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-image: linear-gradient(60deg, #FF79DA, #9356DC);
+  border-color: transparent;
+  border-radius: 30px;
+  box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.45);
+  color: white;
+  margin-bottom: 60px;
+}
+.presentation__bouton:hover, .commande__bouton:hover {
+  box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
+  -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
+  -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.99);
+  background-image: linear-gradient(60deg, #ff88de, #9b63df);
+}
+
+.commande__bouton {
+  opacity: 0;
 }
 
 footer ul {
