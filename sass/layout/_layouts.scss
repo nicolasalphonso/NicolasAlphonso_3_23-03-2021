@@ -200,11 +200,12 @@ footer {
     }
     &__nom-plat {
       display: flex;
+      flex-wrap: nowrap;
       flex-direction: row;
       overflow: hidden;
       margin-bottom: 15px;
       &__description {
-        width: 100%;
+        min-width: 100%;
         height: 70px;
         display: flex;
         flex-direction: row;
@@ -214,7 +215,7 @@ footer {
         overflow: hidden;
         &__texte {
           margin: 10px;
-          width: $largeurtexteplat;
+          width: 80%;
           transition-property: width;
           @include vitesse-animation-laterale-check-plat;
           h3,
@@ -246,13 +247,12 @@ footer {
       }
       &__icone-selection {
         display: flex;
-        width: $largeurcheckplat;
+        width: 20%;
         align-items: center;
         justify-content: center;
         background-color: $tertiary-color;
         border-radius: 0 15px 15px 0;
-        margin-right: -$largeurcheckplat;
-        position: relative;
+        margin-right: -20%;
         transform: translateX(0);
         transition-property: transform;
         @include vitesse-animation-laterale-check-plat;
@@ -262,19 +262,16 @@ footer {
         }
       }
 
-      &:hover,
-      :focus,
-      :focus-visible,
-      :focus-within {
+      &:hover {
         .check-plat {
-          transform: translateX(-$largeurcheckplat);
+          transform: translateX(-100%);
           i {
             transform: rotate(360deg);
             transition: transform 500ms ease-in-out 100ms;
           }
         }
         .reduction-texte-plat {
-          width: $largeurtexteplatreduite;
+          width: 60%;
         }
       }
     }

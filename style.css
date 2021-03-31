@@ -534,12 +534,13 @@ footer {
 }
 .plats__categorie__nom-plat {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
   overflow: hidden;
   margin-bottom: 15px;
 }
 .plats__categorie__nom-plat__description {
-  width: 100%;
+  min-width: 100%;
   height: 70px;
   display: flex;
   flex-direction: row;
@@ -550,7 +551,7 @@ footer {
 }
 .plats__categorie__nom-plat__description__texte {
   margin: 10px;
-  width: 265px;
+  width: 80%;
   transition-property: width;
   transition-duration: 1s;
 }
@@ -580,13 +581,12 @@ footer {
 }
 .plats__categorie__nom-plat__icone-selection {
   display: flex;
-  width: 70px;
+  width: 20%;
   align-items: center;
   justify-content: center;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
-  margin-right: -70px;
-  position: relative;
+  margin-right: -20%;
   transform: translateX(0);
   transition-property: transform;
   transition-duration: 1s;
@@ -595,24 +595,15 @@ footer {
   font-size: x-large;
   color: white;
 }
-.plats__categorie__nom-plat:hover .check-plat,
-.plats__categorie__nom-plat :focus .check-plat,
-.plats__categorie__nom-plat :focus-visible .check-plat,
-.plats__categorie__nom-plat :focus-within .check-plat {
-  transform: translateX(-70px);
+.plats__categorie__nom-plat:hover .check-plat {
+  transform: translateX(-100%);
 }
-.plats__categorie__nom-plat:hover .check-plat i,
-.plats__categorie__nom-plat :focus .check-plat i,
-.plats__categorie__nom-plat :focus-visible .check-plat i,
-.plats__categorie__nom-plat :focus-within .check-plat i {
+.plats__categorie__nom-plat:hover .check-plat i {
   transform: rotate(360deg);
   transition: transform 500ms ease-in-out 100ms;
 }
-.plats__categorie__nom-plat:hover .reduction-texte-plat,
-.plats__categorie__nom-plat :focus .reduction-texte-plat,
-.plats__categorie__nom-plat :focus-visible .reduction-texte-plat,
-.plats__categorie__nom-plat :focus-within .reduction-texte-plat {
-  width: 195px;
+.plats__categorie__nom-plat:hover .reduction-texte-plat {
+  width: 60%;
 }
 
 @keyframes rotation {
