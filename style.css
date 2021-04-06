@@ -288,6 +288,7 @@ footer h2 {
 
 .commande__bouton {
   margin-top: 50px;
+  margin-bottom: 0;
   opacity: 0;
 }
 
@@ -834,6 +835,7 @@ footer {
 
 .commande__bouton {
   margin-top: 50px;
+  margin-bottom: 0;
   opacity: 0;
 }
 
