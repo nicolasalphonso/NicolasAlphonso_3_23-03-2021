@@ -152,7 +152,7 @@ footer {
   flex-direction: column;
   background-color: darken($bg-color, 70%);
   padding: 5%;
-  bottom: 60px;
+  margin-top: 0;
 }
 .entete {
   width: 100%;
@@ -276,4 +276,8 @@ footer {
       }
     }
   }
+}
+
+.bgmenus {
+  background-color: $bg-color;
 }
