@@ -36,6 +36,8 @@
 
 @for $i from 1 through 15 {
   .fadeinmenu-#{$i} {
+    opacity: 0;
+    margin-top: 60px;
     
     $delay : #{$i/5}s;
     animation: fadein-translation 1.5s ease-in-out $delay forwards;
